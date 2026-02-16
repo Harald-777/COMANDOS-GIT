@@ -1,29 +1,29 @@
-cd "/home/maycon/Downloads/git/untitled"
-> tenta entrar nessa pasta; erro porque não é um diretório (é um arquivo)
-
 pwd
 > mostra o caminho da pasta atual
 
 git init
-> cria um novo repositório Git na pasta atual
+> inicia um repositório Git na pasta atual (cria a pasta .git)
 
 git status
-> mostra o estado do repositório (branch, arquivos, alterações)
+> mostra o estado atual do repositório (branch, arquivos, alterações)
 
 git add untitled
 > adiciona o arquivo 'untitled' para a área de preparação (staging)
 
-git st
-> comando inválido (não existe no Git)
-
 git rm --cached untitled
-> remove o arquivo da área de preparação (não apaga do PC)
+> remove o arquivo da área de preparação (não apaga do computador)
 
 git add .
-> adiciona todos os arquivos da pasta atual para a área de preparação
+> adiciona todos os arquivos da pasta atual para a staging area
 
-git commit -m "Primeiro commit"
-> cria o primeiro commit salvando as alterações
+git add untitled
+> adiciona novamente o arquivo após modificação
 
-git branch -m main
-> renomeia a branch atual para 'main'
+git restore untitled
+> restaura o arquivo para a última versão salva (descarta alterações não commitadas)
+
+git commit -m "teste commit"
+> cria um commit com a mensagem "teste commit"
+
+git status
+> confirma que não há alterações pendentes
