@@ -27,3 +27,12 @@ git commit -m "teste commit"
 
 git status
 > confirma que não há alterações pendentes
+
+git log
+> mostra o histórico de commits (hash, autor, data, mensagem)
+
+git checkout 224b9cc9144a4de80910a67f08ccd909e37e1f1f
+> volta o repositório para um commit específico (entra em estado detached HEAD)
+
+git checkout master
+> retorna para a branch principal 'master'
